@@ -1,0 +1,28 @@
+前端：
+javascript 基础知识
+基本数据类型...
+js怪现象: 变量提升
+网络: 用户 -> url -> ?????? -> 看到了页面
+
+ http 应用层　（DNS -> UDP -》 ip地址 192.168.233.124 -> 三次握手->index.html
+  |
+ tcp三次握手 传输层
+  |
+ ip            网络层            ip
+
+- lesson 文件夹 上传至github
+
+Javascript 编程能力
+
+- 自定义对象
+
+- 使用javascript高级对象 html5 canvasContext, AudioContext
+
+// 查文档
+// 属性
+// 方法
+
+- 前端优化
+沿着网络
+(js、css、jpg(sprite, 智图)、DOM、事件 委托、全局变量)
+
