@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./src/style/index.css">
+</head>
+<body>
+	<div class="container" id="app">
+		<img :src="imgUrl" alt=""/>
+		<p v-text="message"></p>
+		<!-- <ul>
+			<li v-for="item in list">
+				<span v-text="item.title"></span>
+				<span v-text="item.content"></span>
+			</li>
+		</ul> -->
+		<p v-if="!flag">这里是!flag</p>
+		<p v-else>这里是flag</p>
+
+		<div class="text">
+			<p v-text="text"></p>
+			<input type="text" v-model="text"/>
+		</div>
+
+		<!-- <div class="btn"></div> -->
+		<a href="javascript:void(0)" class="btn" v-on:click="handleClick">按钮</a>
+	</div>
+<!-- <script src="./src/script/index.js"></script> -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="./src/script/vue-test.js"></script>
+</body>
+</html>

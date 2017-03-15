@@ -1,0 +1,27 @@
+备考
+数据结构+算法+ C++读程序\C +javscript
+先序ABCDEF 中序?   后序
+排序 空间时间复杂度
+
+30选择 + 4大题 ACM, 数据库, stack和heap的区别, 
+
+面试: 
+垂直水平居中 position, flex, transition, (https://www.w3cplus.com/css3/css-secrets/vertical-centering.html)
+
+浏览器渲染
+
+setTimeout(function() {}, 0);
+
+http 2.0 的特点
+
+你的项目，遇到的问题，怎么解决, 优化，对比同类项目有特色,
+
+ 音乐网站跳转页面音乐播放不受影响 
+
+
+
+
+1. 使用 vuejs 快速开发 -> 轻松，引入面向对象 -> React
+2. canvas小游戏 pacman    CanvasContext, 数据，面向对象
+3. 传统项目中的js模块化
+4. 音乐播放器     Audio 

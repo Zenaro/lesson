@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./src/style/func.css">
+</head>
+<body>
+	<div class="container" id="app">
+		<h3>
+			听歌排行
+			<span class="text-title">累计听歌<em v-text="count"></em>首</span>
+		</h3>
+		<ul>
+			<li v-for="item in musicList">
+				<span :dataSrc="item.music_id" v-text="item.name" v-on:click="play(item.music_id)"></span>
+			</li>
+		</ul>
+	</div>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/vue.resource/1.2.1/vue-resource.min.js"></script>
+<script src="./src/script/func.js"></script>
+</body>
+</html>

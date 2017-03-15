@@ -1,0 +1,15 @@
+html {
+	// background: #000;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+	padding: 10px 25px;
+	border-radius: 4px;
+	background: #369;
+	color: #eee;
+}
+.btn:hover {
+	background: #368;
+}
