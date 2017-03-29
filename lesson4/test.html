@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./dist/css/player.min.css">
+</head>
+<body>
+	
+<div class="app">
+
+</div>
+
+<script src="./dist/js/player.min.js"></script>
+<script>
+	var player = new Player({
+		'el': '.app'
+	});
+	player.setSrc("http://7xstax.com1.z0.glb.clouddn.com/in-the-autumn-sky.mp3");
+	player.play();
+</script>
+</body>
+</html>

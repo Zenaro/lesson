@@ -1,0 +1,261 @@
+.audio-player {
+  background: #333;
+  font-family: "Microsoft-Yahei";
+}
+.audio-player a,
+.audio-player i,
+.audio-player em {
+  float: left;
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+}
+.audio-player .audio-player-core {
+  width: 780px;
+  height: 50px;
+  margin: 0 auto;
+}
+.audio-player .audio-player-core .play-btns {
+  width: 120px;
+  height: 100%;
+  margin-left: 5px;
+  float: left;
+}
+.audio-player .audio-player-core .play-btns > a {
+  width: 28px;
+  height: 28px;
+  background: url('../../image/playbar.png');
+}
+.audio-player .audio-player-core .play-btns > a.prv {
+  margin: 11px 0;
+  background-position: 0 -129px;
+}
+.audio-player .audio-player-core .play-btns > a.play-ply,
+.audio-player .audio-player-core .play-btns > a.play-pas {
+  width: 36px;
+  height: 36px;
+  margin: 7px;
+}
+.audio-player .audio-player-core .play-btns > a.play-ply {
+  background-position: 0 -204px;
+}
+.audio-player .audio-player-core .play-btns > a.play-pas {
+  background-position: 0 -165px;
+}
+.audio-player .audio-player-core .play-btns > a.nxt {
+  margin: 11px 0;
+  background-position: -80px -129px;
+}
+.audio-player .audio-player-core .play-btns > a.prv:hover {
+  background-position: -30px -129px;
+}
+.audio-player .audio-player-core .play-btns > a.play-ply:hover {
+  background-position: -40px -204px;
+}
+.audio-player .audio-player-core .play-btns > a.play-pas:hover {
+  background-position: -40px -165px;
+}
+.audio-player .audio-player-core .play-btns > a.nxt:hover {
+  background-position: -110px -129px;
+}
+.audio-player .audio-player-core .play-album {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 8px 10px;
+  padding: 2px;
+  background: url('../../image/playbar.png');
+  background-position: 0 -80px;
+}
+.audio-player .audio-player-core .play-album > a > img {
+  width: 30px;
+}
+.audio-player .audio-player-core .play-progress {
+  width: 510px;
+  height: 100%;
+  padding: 0 5px;
+  float: left;
+}
+.audio-player .audio-player-core .play-progress > .pro-title {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.audio-player .audio-player-core .play-progress > .pro-title > a {
+  color: #ddd;
+  float: left;
+  margin: 0 5px;
+}
+.audio-player .audio-player-core .play-progress > .pro-title > a.singer {
+  color: #999;
+  padding: 0 10px;
+}
+.audio-player .audio-player-core .play-progress > .pro-title > a:hover {
+  text-decoration: underline;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar {
+  /* ---歌曲进度框 ---*/
+  width: 100%;
+  height: 15px;
+  padding: 5px 0;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > .barbg {
+  /*总进度条*/
+  width: 80%;
+  height: 9px;
+  float: left;
+  position: relative;
+  background: #111;
+  border-radius: 4px;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > .barbg > .rdy {
+  /*灰色缓冲条*/
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+  background: #666666;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > .barbg > .cur {
+  /*当前条*/
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > .barbg > .cur > .cur-inner {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background: #008d9a;
+  border-radius: 20px;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > .barbg > .cur > .cur-inner > span.btn-cur {
+  width: 6px;
+  height: 6px;
+  top: -4px;
+  right: -13px;
+  cursor: pointer;
+  position: absolute;
+  background: #008d9a;
+  border-radius: 50%;
+  border: solid 5px #fff;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > .barbg > .cur > .cur-inner > span.btn-cur > i {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  visibility: hidden;
+  background: url('../../image/loading.gif');
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > span.clock {
+  width: 20%;
+  height: 100%;
+  display: block;
+  float: right;
+  color: #888;
+  text-align: center;
+  line-height: 8px;
+  font-size: 12px;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > span.clock > i {
+  display: inline;
+  float: none;
+  color: #ccc;
+}
+.audio-player .audio-player-core .play-progress > .pro-bar > span.clock > em {
+  float: none;
+  display: inline;
+}
+.audio-player .audio-player-core .play-ctrl {
+  width: 55px;
+  height: 100%;
+  padding: 0 10px;
+  float: left;
+  position: relative;
+}
+.audio-player .audio-player-core .play-ctrl > .vlm-bar {
+  display: none;
+  position: absolute;
+  top: -110px;
+  left: 8px;
+  width: 32px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.audio-player .audio-player-core .play-ctrl > .vlm-bar > .barbg {
+  width: 4px;
+  height: 88px;
+  left: 15px;
+  position: absolute;
+  background: #111;
+  border-radius: 4px;
+  top: 12px;
+}
+.audio-player .audio-player-core .play-ctrl > .vlm-bar > .barbg > .cur {
+  width: 4px;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 4px;
+  position: absolute;
+  background: #008d9a;
+}
+.audio-player .audio-player-core .play-ctrl > .vlm-bar > .barbg > .cur > i.btn-cur {
+  width: 5px;
+  height: 5px;
+  top: -6px;
+  left: -4px;
+  cursor: pointer;
+  position: absolute;
+  border: solid 4px #fff;
+  border-radius: 50%;
+  background: #008d9a;
+}
+.audio-player .audio-player-core .play-ctrl > a {
+  width: 24px;
+  height: 24px;
+  margin: 13px 1px;
+  float: left;
+  background: url('../../image/playbar.png');
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-vol {
+  background-position: -2px -248px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-vol:hover {
+  background-position: -31px -248px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-shuffle {
+  background-position: -66px -248px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-shuffle:hover {
+  background-position: -93px -248px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-cycle {
+  background-position: -3px -344px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-cycle:hover {
+  background-position: -33px -344px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-single {
+  background-position: -66px -344px;
+}
+.audio-player .audio-player-core .play-ctrl > a.icon-single:hover {
+  background-position: -93px -344px;
+}
+.audio-player .audio-player-core .play-ctrl > .lop-hint {
+  top: -35px;
+  left: -10px;
+  width: 82px;
+  height: 40px;
+  color: #eee;
+  display: none;
+  position: absolute;
+  line-height: 35px;
+  text-align: center;
+  background: url('../../image/playbar.png');
+  background-position: 0 -457px;
+}
